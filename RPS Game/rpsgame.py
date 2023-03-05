@@ -31,7 +31,7 @@ while True:
  
         if stateResult is False:
             timer = time.time() - initialTime
-            cv2.putText(imgBG, str(int(timer)), (605, 435), cv2.FONT_HERSHEY_PLAIN, 6, (255, 0, 255), 4)
+            cv2.putText(imgBG, str(int(timer)), (620, 420), cv2.FONT_HERSHEY_PLAIN, 6, (255, 0, 255), 4)
  
             if timer > 3:
                 stateResult = True
@@ -73,7 +73,7 @@ while True:
     cv2.putText(imgBG, str(scores[0]), (410, 215), cv2.FONT_HERSHEY_PLAIN, 4, (255, 255, 255), 6)
     cv2.putText(imgBG, str(scores[1]), (1112, 215), cv2.FONT_HERSHEY_PLAIN, 4, (255, 255, 255), 6)
  
-    cv2.imshow("RPS Game/Imagenes/Fondo", imgBG)
+    cv2.imshow("Piedra, Papel o Tijeras", imgBG)
 
     key = cv2.waitKey(1)
     if key == ord(' '):
